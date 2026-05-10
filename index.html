@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BunDev | Android App Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #0096ff;
+            --bg-color: #0a0a0c;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 60px 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 24px;
+            filter: drop-shadow(0 0 15px var(--accent-color));
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin: 0;
+            color: #fff;
+        }
+        .tagline {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            margin: 8px 0 32px;
+            opacity: 0.8;
+        }
+        .description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #999;
+            margin-bottom: 40px;
+        }
+        .info-grid {
+            text-align: left;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+        }
+        .info-item {
+            display: flex;
+            margin-bottom: 12px;
+        }
+        .label {
+            width: 80px;
+            color: #555;
+            flex-shrink: 0;
+        }
+        .value {
+            color: #bbb;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="bundev-transparent.svg" alt="BunDev" class="logo">
+        <h1>BunDev</h1>
+        <p class="tagline">Crafting Android Experiences</p>
+        
+        <p class="description">
+            最新のテクノロジーを活用し、<br>
+            日常をより便利に、楽しく変える<br>
+            Androidアプリの開発・運営を行っています。
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="label">Business</span>
+                <span class="value">Androidアプリの開発・配信および保守・運営</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Location</span>
+                <span class="value">東京都港区浜松町2丁目2番15号 浜松町ダイヤビル2F</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Contact</span>
+                <span class="value">support.bun.apps@gmail.com</span>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 BunDev All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
